@@ -9,7 +9,25 @@ body, html {
 #entete {
     border: 1px solid black;
 }
-#navbar_container{
+#navbar_container {
     display: flex;
     justify-content: space-between;
+}
+.img_article {
+    object-fit: cover;
+    height: 188px;
+    width: 235px;
+}
+#star {
+    color: yellow;
+}
+#cartes_article {
+    display: flex;
+}
+#menu_footer {
+    display: flex;
+}
+.footer_nav {
+    display: flex;
+    flex-direction: column;
 }
