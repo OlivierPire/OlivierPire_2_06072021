@@ -6,18 +6,23 @@ body, html {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
+/* -----------------header------------------ */
+
 #entete {
     margin: 50px;
 }
+
 h1 {
     margin-top: 50px;
     font-size: 1.4em;
-    font-weight: bolder;
 }
+
 h2 {
+    margin-top: -7px;
+    margin-bottom: 14px;
     font-size: 1em;
     font-weight: lighter;
-    
 }
 
 #navbar_container {
@@ -33,18 +38,24 @@ a:visited {
     color: transparent;
 }
 
-nav a {
-    margin-left: 60px;
+nav a{
     color: black;
+    font-size: 0.9em;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #register {
     color: #0065FC;
     font-weight: bold;
 }
+
 #navbar_container a:hover {
     color: #0065FC;
-    text-decoration: overline; 
+    border-top: 3px #0065FC solid;
+    padding-top: 49px;
+    
 }
 
 #position {
@@ -52,9 +63,9 @@ nav a {
     border-radius: 13px 0px 0px 13px;
     margin-right: -5px;
     height: 45px;
-    width: 55px;
+    width: 45px;
     padding-top: 14px;
-    padding-left: 22px;
+    padding-left: 17px;
     cursor: pointer;
 }
 
@@ -62,7 +73,7 @@ nav a {
     padding-bottom: 9px;
     padding-top: 9.1px;;
     border: 1px #F2F2F2 solid;
-    width: 220px;
+    width: 260px;
     height: 45px;
 }
 
@@ -84,20 +95,24 @@ nav a {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    margin-left: -35px;
+    color: black;
+    align-items: center;
+    font-size: 1em;
     width: 70%;
-    margin-left: -40px;
 }
 
+
+
 ul p {
-    margin-bottom: 0.5px;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 
 #filtres li {
     border: 2px #F2F2F2 solid;
     border-radius: 50px;
-    position: ;
-    height: 40px;
+    height: 42px;
     text-align: right;
     padding-left: 50px;
     padding-right: 13px;
@@ -110,7 +125,8 @@ li:hover {
     color: #0065FC;
 }
 
-#filter_icons {
+a i {
+    margin-top: 2px;
     color: #0065FC;
     background-color: #DEEBFF;
     position: absolute;
@@ -128,25 +144,97 @@ li:hover {
 #icon {
     height: 25px;
     width: 25px;
-    border: 1px #F2F2F2 solid;
+    border: 2px #F2F2F2 solid;
+    padding-left: 8.2px;
+    padding-top: 3px;
     border-radius: 50%;
+    color: #0065FC;
+    margin-right: 5px;
 }
 
 header p {
     font-size: 0.9em;
 }
 
-.img_article {
-    object-fit: cover;
-    height: 188px;
-    width: 235px;
+
+/* ------------------Section_1----------------- */
+
+#hebergements {
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 60%;
+    height: 550px;
 }
-#star {
-    color: yellow;
+
+h3 {
+    margin-left: 35px;
+    padding-top: 45px;
 }
+
 #cartes_article {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 430px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
+
+.carte {
+    border-radius: 20px;
+    background-color: white;
+    padding : 5px;
+    box-shadow: 0px 0px 9px #D8D8D8;
+}
+.img_article {
+    object-fit: cover;
+    height: 120px;
+    width: 235px;
+    border-radius: 20px 20px 0px 0px;
+}
+#star {
+    color: #0065FC;
+}
+
+#no_star {
+    color: #d9d9d9;
+}
+
+aside {
+    float: right;
+    height: 550px;
+    border: 1px black solid;
+    margin-right: 50px;
+    width: 30%;
+}
+
+.cartes_aside {
+    height: 100px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+aside img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+
+.description_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#aside_title {
+    display: flex;
+}
+
 #menu_footer {
     display: flex;
 }
