@@ -7,7 +7,7 @@ body, html {
     font-family: 'Raleway', sans-serif;
 }
 
-/* -----------------header------------------ */
+/*-- header -- */
 
 #entete {
     margin: 50px;
@@ -75,7 +75,7 @@ nav a{
 
 #champ_recherche {
     padding-bottom: 9px;
-    padding-top: 9.1px;;
+    padding-top: 9.1px;
     border: 1px #F2F2F2 solid;
     width: 260px;
     height: 45px;
@@ -97,11 +97,17 @@ nav a{
     padding-bottom: 1px;
 }
 
+
+#filtres{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 #filtres ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    margin-left: -35px;
     color: black;
     align-items: center;
     font-size: 1em;
@@ -111,13 +117,14 @@ nav a{
 
 
 
-ul p {
+#filtres p {
     padding-bottom: 5px;
     font-weight: bold;
 }
 
 #filtres li {
     border: 2px #F2F2F2 solid;
+    position:relative;
     border-radius: 50px;
     height: 48px;
     text-align: right;
@@ -125,6 +132,7 @@ ul p {
     padding-right: 27px;
     font-weight: bold;
     padding-top: 11px;
+    display: flex;
 }
 
 li:hover {
@@ -132,12 +140,14 @@ li:hover {
     color: #0065FC;
 }
 
-a i {
+#filtres li i {
     margin-top: 0px;
     color: #0065FC;
     background-color: #DEEBFF;
     position: absolute;
     border-radius: 50%;
+    top:-2px;
+    left:-1px;
     height: 47px;
     width: 47px;
     text-align: center;
@@ -146,10 +156,6 @@ a i {
 
 a {
     color: black;
-}
-
-#filtres a {
-    display: flex;
 }
 
 #icon {
@@ -163,99 +169,83 @@ a {
     margin-right: 5px;
 }
 
-#filtres + p {
-    margin-bottom: -20px;
-}
 
 header p {
     font-size: 0.9em;
 }
 
 
-/* ------------------Section_1----------------- */
-
-
-.lien_article {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
+/*-- Section_1 --*/
 
 
 #hebergements {
     margin-left: 50px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 60%;
-    height: 650px;
+    width: 58%;
 }
 
 h3 {
     margin-left: 30px;
+    margin-bottom: 0px;
     padding-top: 45px;
     font-size: 1.2em;
+    font-weight: 1000;
 }
 
 #article_container{
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 .carte_article {
     border-radius: 20px;
     box-shadow: 0px 0px 9px #D8D8D8;
-    margin-bottom: 35px;
-    position: relative;
     height: 220px;
     width: 250px;
-    z-index: 1;
     background-color: white;
+    padding: 5px;
+    margin-top: 40px;
 }
 
+.description_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
 
 .img_article {
     object-fit: cover;
     height: 125px;
     width: 240px;
     border-radius: 20px 20px 0px 0px;
-    position: relative;
-    margin-left: 5px;
-    margin-top: 5px;
-    
+    display: flex;
 }
-#star {
+.star {
     color: #0065FC;
-    margin-top: 10px;
-    margin-bottom: 15px;
 }
 
-#no_star {
+.no_star {
     color: #d9d9d9;
 }
 
-.description_article {
-    z-index: 2;
-    position: absolute;
-    bottom: 1px;
-    margin-left: 5px;
-    
-}
-
-article p {
-    margin-top: 0;
-    margin-left: 30px;
+.lieu {
     font-size: 1em;
     font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 0px;        
 }
 
+.tarif {
+    font-size: 0.9em;
+    margin-top: 2px;
+}
 
-
-/* ------------aside------------ */
+/*-- aside --*/
 
 .lien_aside {
-    height: 100%;
     width: 100%;
     position: absolute;
 }
@@ -316,24 +306,33 @@ aside img {
     justify-content: space-between;
     font-size: 1.05em;
     flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 170px;
+    width: 180px;
+    
 }
 
 h4 {
     margin-right: 100px;
 }
 
-/* -----------activités-------------*/
+/*-- activités --*/
 
+h5 {
+    font-weight: 1000;
+    font-size: 1.2em;
+}
 #cartes_activites {
     flex-flow: column wrap;
     display: flex;
     height: 455px;
-    
+    justify-content: space-between;
 }
 
 #activites {
    margin-left: 50px;
    margin-right: 20px;
+   margin-top: 50px;
 }
 
 .lien_activites {
@@ -344,19 +343,38 @@ h4 {
 
 .lien_activites img {
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.description_activites {
+    font-weight: 1000;
+    margin-left: 20px;
 }
 
 
-/*------------footer--------------*/
+/*-- footer--*/
 
+footer {
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
 #menu_footer {
+    padding-top: 34px;
+    margin-left: 50px;
     display: flex;
+    justify-content: space-between;
+    margin-right: 350px;
+    padding-bottom: 50px;
 }
 .footer_nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
 }
 
-#activites img {
-    object-fit: cover;
+.footer_nav a {
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-weight: bold;
 }
