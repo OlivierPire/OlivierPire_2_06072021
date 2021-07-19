@@ -38,7 +38,7 @@ a:visited {
     color: transparent;
 }
 
-nav a{
+nav a {
     color: black;
     font-size: 0.9em;
     justify-content: space-between;
@@ -115,8 +115,6 @@ nav a{
     margin-bottom: 20px;
 }
 
-
-
 #filtres p {
     padding-bottom: 5px;
     font-weight: bold;
@@ -177,36 +175,38 @@ header p {
 
 /*-- Section_1 --*/
 
-
-#hebergements {
-    margin-left: 50px;
-    border-radius: 20px;
+article {
+    height: 650px;
+    width: 60%;
     background-color: #F2F2F2;
-    width: 58%;
+    border-radius: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h3 {
-    margin-left: 30px;
+    margin-top: 40px;
     margin-bottom: 0px;
-    padding-top: 45px;
     font-size: 1.2em;
-    font-weight: 1000;
+    font-weight: 900;
+    margin-left: 30px;
 }
 
-#article_container{
+#article_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
+    height: 80%;  
 }
 
 .carte_article {
     border-radius: 20px;
     box-shadow: 0px 0px 9px #D8D8D8;
-    height: 220px;
-    width: 250px;
     background-color: white;
     padding: 5px;
-    margin-top: 40px;
 }
 
 .description_article {
@@ -232,7 +232,7 @@ h3 {
 }
 
 .lieu {
-    font-size: 1em;
+    font-size: 1.15em;
     font-weight: bold;
     margin-top: 7px;
     margin-bottom: 0px;        
@@ -240,76 +240,81 @@ h3 {
 
 .tarif {
     font-size: 0.9em;
-    margin-top: 2px;
+    margin-top: 4px;
+}
+
+#more {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 /*-- aside --*/
 
-.lien_aside {
-    width: 100%;
-    position: absolute;
+.lien_aside {  
+    display: flex;
+    background-color: white;   
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px #D8D8D8;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 400px;
+    height: 160px;
 }
 
 aside {
     float: right;
-    height: 650px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 50px;
     width: 30%;
+    height: 650px;
 }
 
 #aside_title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
     font-size: 1.2em;
+    font-weight: 900;
+}
+
+h4 {
+    margin-top: 45px;
+    margin-bottom: 5px;
+    margin-left: 30px;
 }
 
 #aside_title i {
     height: 16px;
     width: 16px;
+    margin-right: 50px;
+    margin-top: 45px;
 }
 
 #aside_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.cartes_aside {
-    width: 400px;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;   
-    border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 9px #D8D8D8;
-    position: relative;
-    justify-content: flex-end;
+    justify-content: space-around;
+    height: 90%;
+    align-items: center; 
 }
 
 aside img {
-    height: 140px;
+    height: 150px;
     width: 160px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
-    margin-left: 10px;
+    display: flex;
 }
 
 .description_aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-size: 1.05em;
-    flex-wrap: wrap;
-    margin-right: 30px;
-    margin-left: 170px;
-    width: 180px;
-    
+    justify-content: space-between;
+    margin-left: 25px;
 }
 
 h4 {
@@ -319,19 +324,21 @@ h4 {
 /*-- activités --*/
 
 h5 {
-    font-weight: 1000;
+    font-weight: 900;
     font-size: 1.2em;
 }
+
 #cartes_activites {
     flex-flow: column wrap;
     display: flex;
-    height: 455px;
+    align-content: space-between;
     justify-content: space-between;
+    height: 600px;
 }
 
 #activites {
    margin-left: 50px;
-   margin-right: 20px;
+   margin-right: 50px;
    margin-top: 50px;
 }
 
@@ -341,16 +348,28 @@ h5 {
     border-radius: 20px;
 }
 
-.lien_activites img {
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-
 .description_activites {
-    font-weight: 1000;
+    font-weight: 900;
     margin-left: 20px;
 }
 
+.lien_activites img {
+    width: 330px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#img_activites_1, #img_activites_4 {
+    height: 545px;    
+}
+
+#img_activites_2 {
+    height: 310px;
+}
+
+#img_activites_3 {
+    height: 150px;
+}
 
 /*-- footer--*/
 
@@ -377,4 +396,101 @@ footer {
 
 footer p {
     font-weight: bold;
+}
+
+@media screen and (max-width: 1456px) {
+
+    #cartes_activites {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        height: 800px;
+    }
+
+    .lien_activites img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .lien_activites {
+        width: 400px;
+        height: 370px;
+    }
+
+    #img_activites_1, #img_activites_4 {
+        height: 300px;    
+    }
+    
+    #img_activites_2 {
+        height: 300px;
+    }
+    
+    #img_activites_3 {
+        height: 300px;
+    }
+
+    .lien_aside {
+        width: 390px
+    }
+
+    #filtres ul {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+
+    .lien_activites img {
+        width: 320px;
+        height: 250px;
+    }
+
+    .lien_activites {
+        width: 320px;
+        height: 320px;
+    }
+
+    #img_activites_1, #img_activites_4 {
+        height: 250px;    
+    }
+    
+    #img_activites_2 {
+        height: 250px;
+    }
+    
+    #img_activites_3 {
+        height: 250px;
+    }
+
+    article {
+        width: 50%;
+        height: 100%;
+    }
+
+    #article_container {
+        height: 800px;
+        align-content: space-around;
+    }
+
+    aside {
+        width: 35%;
+        height: 914px;
+    }
+
+    .lien_aside {  
+        width: 370px;
+        height: 190px;
+    }
+
+    #aside_container {
+        height: 800px;
+    }
+
+    aside img {
+        height: 180px;
+    }
+
+    #filtres ul {
+        width: 85%;
+    }
 }

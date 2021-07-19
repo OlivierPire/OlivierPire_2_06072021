@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 		
 		<meta charset="UTF-8">
@@ -41,7 +41,7 @@
 					<li><i class="fas fa-money-bill-wave"></i>Économique</li>
 					<li><i class="fas fa-child"></i>Familial</li>
 					<li><i class="fas fa-heart"></i>Romantique</li>
-					<li><i class="fas fa-dog"></i>Animaux autorisés</li>
+					<li id="animals"><i class="fas fa-dog"></i>Animaux autorisés</li>
 				</ul>
 			</div>
 
@@ -58,13 +58,13 @@
 
 			<div id="aside_container">
 
-				
-				<div class="cartes_aside">
 					<a href="#" class="lien_aside">
 						<img src="images/hebergements/4_small/soleil.jpg" alt="Hôtel le soleil du matin" class="img_aside">
 						<div class="description_aside">
-							<p><strong>Hôtel le soleil du matin</strong>
-							à partir de 128€</p>
+							<div>
+								<p class="lieu"><strong>Hôtel le soleil du matin</strong></p>
+								<p class="tarif">Nuit à partir de 128€</p>
+							</div>
 							<div class="notes_aside">
 								<i class="fas fa-star star"></i>
 								<i class="fas fa-star star"></i>
@@ -74,16 +74,14 @@
 							</div>
 						</div>
 					</a>
-				</div>
-					
 				
-
-				<div class="cartes_aside">
 					<a href="#" class="lien_aside">
 						<img src="images/hebergements/4_small/coeur.jpg" alt="Chambres d'hôtes au coeur de l'eau" class="img_aside">
 						<div class="description_aside">
-							<p><strong>Au coeur de l'eau Chambre d'hôtes</strong><br>
-							Nuit à partir de 71€<br></p>
+							<div>
+								<p class="lieu"><strong>Au coeur de l'eau Chambre d'hôtes</strong></p>
+								<p class="tarif">Nuit à partir de 71€</p>
+							</div>
 							<div class="notes_aside">
 								<i class="fas fa-star star"></i>
 								<i class="fas fa-star star"></i>
@@ -93,14 +91,14 @@
 							</div>
 						</div>
 					</a>
-				</div>
 
-				<div class="cartes_aside">
 					<a href="#" class="lien_aside">
 						<img src="images/hebergements/4_small/bleublanc.jpg" alt="Hôtel tout bleu et blanc" class="img_aside">
 						<div class="description_aside">
-							<p><strong>Hôtel tout bleu et blanc</strong>
-							Nuit à partir de 68€</p>
+							<div>
+								<p class="lieu"><strong>Hôtel tout bleu et blanc</strong></p>
+								<p class="tarif">Nuit à partir de 68€</p>
+							</div>
 							<div class="notes_aside">
 								<i class="fas fa-star star"></i>
 								<i class="fas fa-star star"></i>
@@ -109,10 +107,8 @@
 								<i class="fas fa-star no_star"></i>
 							</div>
 						</div>
-					</a>
-				</div>
+					</a>	
 			</div>
-
 
 		</aside>
 
@@ -123,7 +119,6 @@
 			<article>
 
 				<h3>Hébergements à Marseille</h3>
-
 				<div id="article_container">
 
 					<a href="#" class="carte_article">
@@ -226,7 +221,7 @@
 
 				</div>
 
-				<p><a href="#">Afficher plus</a></p>
+				<a href="#" id="more">Afficher plus</a>
 
 			</article>
 
@@ -242,47 +237,47 @@
 
 			<div id="cartes_activites">
 
-				<a href="#" class="lien_activites">
-					<img src="images/activites/3_medium/port.jpg" alt="Le vieux port" class="img_activites" height="400px" width="330px">
-					<div class="description_activites">
-						<p>Vieux Port</p>
-					</div>	
-				</a>
+					<a href="#" class="lien_activites">
+						<img src="images/activites/3_medium/port.jpg" alt="Le vieux port" id="img_activites_1">
+						<div class="description_activites">
+							<p>Vieux Port</p>
+						</div>	
+					</a>
+
+					<a href="#" class="lien_activites">
+						<img src="images/activites/3_medium/pomègues.jpg" alt="Fort de pomègues" id="img_activites_2">
+						<div class="description_activites">
+							<p>Fort de pomègues</p>
+						</div>
+					</a>	
+
+					<a href="#" class="lien_activites">
+						<img src="images/activites/3_medium/frioul.jpg" alt="Îles du Frioul" id="img_activites_3">
+						<div class="description_activites">
+							<p>Îles du Frioul</p>
+						</div>
+					</a>
 				
-				<a href="#" class="lien_activites">
-					<img src="images/activites/3_medium/pomègues.jpg" alt="Fort de pomègues" class="img_activites" height="185px" width="330px">
-					<div class="description_activites">
-						<p>Fort de pomègues</p>
-					</div>
-				</a>
-			
-				<a href="#" class="lien_activites">
-					<img src="images/activites/3_medium/frioul.jpg" alt="Îles du Frioul" class="img_activites" height="130px" width="330px">
-					<div class="description_activites">
-						<p>Îles du Frioul</p>
-					</div>
-				</a>
-			
-				<a href="#" class="lien_activites">
-					<img src="images/activites/3_medium/calanques.jpg" alt="Parc national des Calanques" class="img_activites" height="400px" width="330px">
-					<div class="description_activites">
-						<p>Parc national des Calanques</p>
-					</div>
-				</a>
-			
-				<a href="#" class="lien_activites">			
-					<img src="images/activites/3_medium/notre_dame.jpg" alt="Notre-dame-de-la-garde" class="img_activites" height="157" width="330px">
-					<div class="description_activites">
-						<p>Notre-Dame-de-la-Garde</p>
-					</div>
-				</a>
-			
-				<a href="#" class="lien_activites">
-					<img src="images/activites/3_medium/longchamp.jpg" alt="Parc longchamp" class="img_activites" height="157" width="330px">
-					<div class="description_activites">
-						<p>Parc Longchamp</p>
-					</div>
-				</a>
+					<a href="#" class="lien_activites">
+						<img src="images/activites/3_medium/calanques.jpg" alt="Parc national des Calanques" id="img_activites_4">
+						<div class="description_activites">
+							<p>Parc national des Calanques</p>
+						</div>
+					</a>
+				
+					<a href="#" class="lien_activites">			
+						<img src="images/activites/3_medium/notre_dame.jpg" alt="Notre-dame-de-la-garde" id="img_activites_5">
+						<div class="description_activites">
+							<p>Notre-Dame-de-la-Garde</p>
+						</div>
+					</a>
+				
+					<a href="#" class="lien_activites">
+						<img src="images/activites/3_medium/longchamp.jpg" alt="Parc longchamp" id="img_activites_6">
+						<div class="description_activites">
+							<p>Parc Longchamp</p>
+						</div>
+					</a>
 					
 			</div>
 
