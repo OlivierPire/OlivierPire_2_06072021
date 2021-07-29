@@ -51,7 +51,7 @@ a:visited {
 .nav_link:hover {
     color: #0065FC;
     border-top: 3px #0065FC solid;
-    padding-top: 48px;  
+    padding-top: 49px;  
 }
 
 #search {
@@ -59,7 +59,6 @@ a:visited {
     margin-bottom: 30px;
     display: flex;
 }
-
 
 #position {
     background-color: #F2F2F2;
@@ -101,7 +100,7 @@ a:visited {
 }
 
 #filtres {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
@@ -239,8 +238,6 @@ aside img {
     margin-left: 25px;
 }
 
-
-
 /*-- Article --*/
 
 article {
@@ -250,6 +247,7 @@ article {
     display: flex;
     flex-direction: column;
     width: 60%;
+    max-width: 900px;
 }
 
 h4 {
@@ -437,220 +435,220 @@ footer p {
     }
 }
 
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
-        #filtres ul {
-            justify-content: flex-start;
-        }
-
-        aside {
-            float: none;
-            margin-right: 0px;
-            width: auto;
-            border-radius: 0px;
-        }
-
-        #aside_container {
-            height: auto;
-        }
-
-        .carte_aside {
-            flex-direction: row;
-            width: 600px;
-        }
-
-        h3 {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        aside img {
-            height: 170px;
-            width: 280px;
-            border-radius: 20px 0px 0px 20px;
-        }
-
-        article {
-            width: auto;
-            margin-left: 0px;
-            border-radius: 0px;
-            background-color: white;
-        }
-
-        h4 {
-            margin-left: 50px;
-        }
-
-        #more {
-            margin-left: 50px;
-        }
-        
-        #activites_container {
-            flex-direction: row;
-            height: auto;
-            margin-right: 50px;
-        }
-        
-        .carte_activites {
-            width: 40%;   
-            margin-bottom: 40px;
-            margin-right: 0px;
-        }
-
-        #activites img {
-            height: 400px;
-        }
-
-        #menu_footer {
-            width: auto;
-            margin-right: 50px;
-        }
-
-        @media screen and (max-width: 640px) {
-            
-        #header_container {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-
-        #navbar_container {
-            flex-direction: column;
-        }
-
-        #navbar_container img {
-            margin-left: 20px;
-            height: 45px;
-            width: 97px;
-        }
-
-        nav {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-        }
-
-        #register {
-            position: absolute;
-            right: 0px;
-            top: 70px;
-            margin-right: 20px;
-        }
-        
-        .nav_link {
-            margin: 0px;
-            border-bottom: 2px #D8D8D8 solid;
-            width: 100%;
-            padding-bottom: 10px;
-        }
-
-        #register:hover {
-            border: none;
-        }
-
-        .nav_link:hover {
-            color: #0065FC;
-            border-bottom: 2px #0065FC solid;
-            border-top: none;
-            padding-top: 0px;
-        }
-
-        h1, h2 {
-            margin-left: 20px;
-        }
-
-        #search {
-            margin-left: 20px;
-            margin-top: 30px;
-        }
-        
-        #search_button {
-            border-radius: 13px 13px 13px 13px;
-            margin-left: -7px;            
-        }
-
-        #rechercher {
-            display: none;
-        }
-        
-        #loupe {
-            display: inline;
-            margin: 15px;
-        }
-
-        #filtres {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        #filtres ul {
-            padding: 0px;
-            margin-left: 10px;
-        }
-
-        #filtres p {
-            margin-left: 20px;
-        }
-
-        #icon_info {
-            margin-left: 20px;
-        }
-
-        .carte_aside {
-            width: 350px;
-            height: 150px;
-        }
-
-        aside img {
-            width: 150px;
-            height: 140px;
-        }
-
-        h3 {
-            margin-left: 20px;
-        }
-
-        h4 {
-            margin-left: 20px;
-        }
-
-        #article_container {
-            height: auto;
-        }
-
-        .carte_article {
-            width: 350px;
-            margin-bottom: 20px;
-        }
-
-        #more {
-            margin-left: 20px;
-        }
-
-        #activites {
-            margin: 20px;
-        }
-
-        #activites_container {
-            flex-direction: column;
-            align-content: center;
-            margin-right: 0px;
-        }
-
-        #activites img {
-            height: 150px;
-            width: 350px;
-            margin-right: 0px;
-        }
-
-        .carte_activites {
-            width: 350px;
-            margin-right: 0px;
-        }
-
-        #menu_footer {
-            flex-direction: column;
-            margin-left: 20px;
-        }
+    #filtres ul {
+        justify-content: flex-start;
     }
+
+    aside {
+        float: none;
+        margin-right: 0px;
+        width: auto;
+        border-radius: 0px;
+    }
+
+    #aside_container {
+        height: auto;
+    }
+
+    .carte_aside {
+        flex-direction: row;
+        width: 600px;
+    }
+
+    h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    aside img {
+        height: 170px;
+        width: 280px;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    article {
+        width: auto;
+        margin-left: 0px;
+        border-radius: 0px;
+        background-color: white;
+    }
+
+    h4 {
+        margin-left: 50px;
+    }
+
+    #more {
+        margin-left: 50px;
+    }
+    
+    #activites_container {
+        flex-direction: row;
+        height: auto;
+        margin-right: 50px;
+    }
+    
+    .carte_activites {
+        width: 40%;   
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+
+    #activites img {
+        height: 400px;
+    }
+
+    #menu_footer {
+        width: auto;
+        margin-right: 50px;
+    }
+
+@media screen and (max-width: 640px) {
+        
+    #header_container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #navbar_container {
+        flex-direction: column;
+    }
+
+    #navbar_container img {
+        margin-left: 20px;
+        height: 45px;
+        width: 97px;
+    }
+
+    nav {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    #register {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        margin-right: 20px;
+    }
+    
+    .nav_link {
+        margin: 0px;
+        border-bottom: 2px #D8D8D8 solid;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #register:hover {
+        border: none;
+    }
+
+    .nav_link:hover {
+        color: #0065FC;
+        border-bottom: 2px #0065FC solid;
+        border-top: none;
+        padding-top: 0px;
+    }
+
+    h1, h2 {
+        margin-left: 20px;
+    }
+
+    #search {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    
+    #search_button {
+        border-radius: 13px 13px 13px 13px;
+        margin-left: -7px;            
+    }
+
+    #rechercher {
+        display: none;
+    }
+    
+    #loupe {
+        display: inline;
+        margin: 15px;
+    }
+
+    #filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filtres ul {
+        padding: 0px;
+        margin-left: 10px;
+    }
+
+    #filtres p {
+        margin-left: 20px;
+    }
+
+    #icon_info {
+        margin-left: 20px;
+    }
+
+    .carte_aside {
+        width: 350px;
+        height: 150px;
+    }
+
+    aside img {
+        width: 150px;
+        height: 140px;
+    }
+
+    h3 {
+        margin-left: 20px;
+    }
+
+    h4 {
+        margin-left: 20px;
+    }
+
+    #article_container {
+        height: auto;
+    }
+
+    .carte_article {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    #more {
+        margin-left: 20px;
+    }
+
+    #activites {
+        margin: 20px;
+    }
+
+    #activites_container {
+        flex-direction: column;
+        align-content: center;
+        margin-right: 0px;
+    }
+
+    #activites img {
+        height: 150px;
+        width: 350px;
+        margin-right: 0px;
+    }
+
+    .carte_activites {
+        width: 350px;
+        margin-right: 0px;
+    }
+
+    #menu_footer {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+}
 }
