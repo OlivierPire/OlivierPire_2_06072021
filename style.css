@@ -201,7 +201,7 @@ aside {
     font-weight: 900;
 }
 
-h3 {
+#popular_title {
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 30px;
@@ -250,7 +250,7 @@ article {
     max-width: 900px;
 }
 
-h4 {
+#hebergements_title {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.2em;
@@ -317,7 +317,7 @@ h4 {
 
 /*-- activités --*/
 
-h5 {
+#activites_title {
     font-weight: 900;
     font-size: 1.2em;
 }
@@ -394,8 +394,8 @@ footer {
     padding-bottom: 10px;
 }
 
-footer p {
-    font-weight: bold;
+h5 {
+    font-size: 1em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -457,7 +457,7 @@ footer p {
         width: 600px;
     }
 
-    h3 {
+    #popular_title {
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -475,7 +475,7 @@ footer p {
         background-color: white;
     }
 
-    h4 {
+    #hebergements_title {
         margin-left: 50px;
     }
 
@@ -604,11 +604,11 @@ footer p {
         height: 140px;
     }
 
-    h3 {
+    #popular_title {
         margin-left: 20px;
     }
 
-    h4 {
+    #hebergements_title {
         margin-left: 20px;
     }
 
